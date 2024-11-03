@@ -1,4 +1,4 @@
-//This program is to print the result of a string str as 15. The sceanrio is when there is arithmetic operator you should perform that operations based on the final result of the variable called Value.
+//This program final output is 15. The sceanrio is when there is arithmetic operator you should perform that operations based on the index values
 
 
 import org.junit.Test;
