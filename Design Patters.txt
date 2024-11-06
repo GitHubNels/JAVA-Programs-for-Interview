@@ -1,0 +1,28 @@
+//Using these patterns makes Selenium tests more robust, maintainable, and readable, and applying them will help automate larger, scalable test suites.
+
+1. Page Object Model (POM) - Separation (Seperate each classes for each Pages and elements)
+
+Example: For a login page, you would create a LoginPage class containing methods like enterUsername(), enterPassword(), and clickLogin().
+Advantages: It makes the test easiner and clearner to maintain
+
+
+2. Factory Pattern - BrowserFactory - Choice (You create a factory class to decide which object (browser) to create.)
+
+Example: A BrowserFactory class can create instances of ChromeDriver, FirefoxDriver, etc., based on a parameter.
+Advantages: This pattern makes it easy to switch the browser used for tests without modifying much code.
+
+
+3. Singleton Pattern - single webdriver instance Uniqueness( Ensures only one instance of a class (like WebDriver) is created during the test session.)
+
+Example: A DriverManager class that returns the same WebDriver instance across tests.
+
+Advantages: Reduces overhead and manages the WebDriver instance efficiently across multiple tests.
+
+4. Decorator Pattern - wrapper classes like wait Enhancement (Wraps additional functionality around methods without altering their core logic.)
+
+Example: Implementing custom waits or logging around WebDriver actions (click, sendKeys) by creating wrapper methods that add logging or error-handling.
+
+Advantages: Adds flexibility and functionality, like retries, without cluttering the main test code.
+
+
+                                ==================================================
